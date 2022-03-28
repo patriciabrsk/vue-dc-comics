@@ -1,0 +1,7 @@
+$brandColor: #0082f9;
+
+@mixin centralizer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
