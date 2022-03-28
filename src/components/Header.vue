@@ -75,7 +75,6 @@ export default {
 };
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="scss" scoped>
 @import "../assets/scss/partials/_variables.scss";
 
@@ -88,29 +87,30 @@ div#header {
   font-size: 70%;
 
   img {
-    width: 10%;
+    width: 100px;
   }
-}
-ul {
-  display: flex;
-  justify-content: space-evenly;
 
-  li {
-    list-style-type: none;
-    text-transform: uppercase;
+  ul {
     display: flex;
-    align-items: center;
-    text-align: center;
-    padding: 25px 10px;
+    justify-content: space-evenly;
 
-    &:active,
-    &.active {
-      border-bottom: 5px solid #0082f9;
-    }
+    li {
+      list-style-type: none;
+      text-transform: uppercase;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      padding: 25px 10px;
 
-    a {
-      text-decoration: none;
-      color: #303030;
+      &:active,
+      &.active {
+        border-bottom: 5px solid #0082f9;
+      }
+
+      a {
+        text-decoration: none;
+        color: #303030;
+      }
     }
   }
 }
