@@ -1,7 +1,6 @@
 $brandColor: #0082f9;
 
-@mixin centralizer {
+@mixin alignCenter {
     display: flex;
-    justify-content: center;
     align-items: center;
 }

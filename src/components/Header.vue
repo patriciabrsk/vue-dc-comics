@@ -83,13 +83,17 @@ export default {
 div#header {
   text-align: center;
   display: flex;
-  margin: 20px auto;
+  align-items: center;
+  height: 100px;
+  margin: 0 auto;
   width: 70%;
   justify-content: space-between;
   font-size: 70%;
+  font-weight: 500;
 
   img {
-    width: 100px;
+    width: 80px;
+    height: 80px;
   }
 
   ul {
@@ -106,7 +110,7 @@ div#header {
 
       &:active,
       &.active {
-        border-bottom: 5px solid #0082f9;
+        border-bottom: 5px solid $brandColor;
       }
 
       a {

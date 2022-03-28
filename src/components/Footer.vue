@@ -199,7 +199,7 @@ div#footer {
       display: flex;
       background-image: url("../assets/img/dc-logo-bg.png");
       background-repeat: no-repeat;
-      background-size: 50%;
+      background-size: 60%;
       background-position: center right;
 
       div.links-list {
