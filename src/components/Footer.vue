@@ -1,47 +1,51 @@
 <template>
   <div id="footer">
-    <div class="links-wrapper">
-      <h4>DC Comics</h4>
-      <nav>
-        <ul>
-          <li>
-            <a href="#"></a>
-          </li>
-        </ul>
-      </nav>
-    </div>
+    <div class="footer-wrapper">
+      <div class="links-wrapper">
+        <div class="links-list">
+          <h4>DC Comics</h4>
+          <nav>
+            <ul>
+              <li v-for="(link, index) in dcComicsLinks" :key="index">
+                <a :href="link.url">{{ link.text }}</a>
+              </li>
+            </ul>
+          </nav>
 
-    <div class="links-wrapper">
-      <h4>DC</h4>
-      <nav>
-        <ul>
-          <li>
-            <a href="#"></a>
-          </li>
-        </ul>
-      </nav>
-    </div>
+          <div>
+            <h4>Shop</h4>
+            <nav>
+              <ul>
+                <li v-for="(link, index) in shopLinks" :key="index">
+                  <a :href="link.url">{{ link.text }}</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
 
-    <div class="links-wrapper">
-      <h4>Sites</h4>
-      <nav>
-        <ul>
-          <li>
-            <a href="#"></a>
-          </li>
-        </ul>
-      </nav>
-    </div>
+        <div class="links-list">
+          <h4>DC</h4>
+          <nav>
+            <ul>
+              <li v-for="(link, index) in dcLinks" :key="index">
+                <a :href="link.url">{{ link.text }}</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
 
-    <div class="links-wrapper">
-      <h4>Shop</h4>
-      <nav>
-        <ul>
-          <li>
-            <a href="#"></a>
-          </li>
-        </ul>
-      </nav>
+        <div class="links-list">
+          <h4>Sites</h4>
+          <nav>
+            <ul>
+              <li v-for="(link, index) in sitesLinks" :key="index">
+                <a :href="link.url">{{ link.text }}</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -52,7 +56,7 @@ export default {
   name: "Footer",
   data() {
     return {
-      DCComicsLinks: [
+      dcComicsLinks: [
         {
           text: "Characters",
           url: "#",
@@ -95,6 +99,84 @@ export default {
           url: "#",
         },
       ],
+      shopLinks: [
+        {
+          text: "Shop DC",
+          url: "#",
+        },
+        {
+          text: "Shop DC Collectibles",
+          url: "#",
+        },
+      ],
+      dcLinks: [
+        {
+          text: "Terms of Use",
+          url: "#",
+        },
+        {
+          text: "Privacy policy (New)",
+          url: "#",
+        },
+        {
+          text: "Ad Choices",
+          url: "#",
+        },
+        {
+          text: "Advertising",
+          url: "#",
+        },
+        {
+          text: "jobs",
+          url: "#",
+        },
+        {
+          text: "Subscriptions",
+          url: "#",
+        },
+        {
+          text: "Talent Workshops",
+          url: "#",
+        },
+        {
+          text: "Fans",
+          url: "#",
+        },
+        {
+          text: "CPSC Certificates",
+          url: "#",
+        },
+        {
+          text: "Shop Help",
+          url: "#",
+        },
+        {
+          text: "Contact Us",
+          url: "#",
+        },
+      ],
+      sitesLinks: [
+        {
+          text: "DC",
+          url: "#",
+        },
+        {
+          text: "MAD Magazine",
+          url: "#",
+        },
+        {
+          text: "Ad Choices",
+          url: "#",
+        },
+        {
+          text: "Advertising",
+          url: "#",
+        },
+        {
+          text: "jobs",
+          url: "#",
+        },
+      ],
     };
   },
 };
@@ -106,22 +188,40 @@ export default {
 div#footer {
   background-image: url("../assets/img/footer-bg.jpg");
 
-  div.links-wrapper {
+  div.footer-wrapper {
+    font-size: 0.8rem;
     display: flex;
-    margin: 0 auto;
-    width: 70%;
+    justify-content: space-around;
 
-    h4 {
-      color: white;
-    }
-
-    ul {
+    div.links-wrapper {
+      margin: 0 auto;
+      width: 70%;
       display: flex;
-      justify-content: space-evenly;
+      background-image: url("../assets/img/dc-logo-bg.png");
+      background-repeat: no-repeat;
+      background-size: 63%;
+      background-position: center right;
 
-      li {
-        list-style-type: none;
-        text-transform: uppercase;
+      div.links-list {
+        padding: 20px 0;
+        margin-right: 15px;
+        h4 {
+          color: white;
+          text-transform: uppercase;
+        }
+
+        ul {
+          padding-left: 0;
+
+          li {
+            list-style-type: none;
+
+            a {
+              text-decoration: none;
+              color: #797979;
+            }
+          }
+        }
       }
     }
   }

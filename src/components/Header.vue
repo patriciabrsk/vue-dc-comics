@@ -3,7 +3,9 @@
     <img src="../assets/img/dc-logo.png" alt="DC logo" />
     <ul>
       <li v-for="(link, index) in headerLinks" :key="index">
-        <a :class="{ active: link.current }" href="#">{{ link.text }}</a>
+        <a :class="{ active: link.current }" :href="link.url">{{
+          link.text
+        }}</a>
       </li>
       <li>
         <a class="active" href="#">Comics</a>
