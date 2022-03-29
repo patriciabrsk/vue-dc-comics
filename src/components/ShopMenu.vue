@@ -56,19 +56,29 @@ div#shop-menu {
   div.menu-links {
     width: 70%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     color: white;
     text-transform: uppercase;
     font-size: 0.7rem;
-    padding: 25px 0 25px;
 
     div.link {
-      margin: 0 auto;
+      display: flex;
       align-items: center;
       text-align: center;
-      img {
-        width: 30px;
-        padding-right: 0.5rem;
+      margin: 0 auto;
+      padding: 22px 0 22px;
+
+      a {
+        display: flex;
+        margin: 0 auto;
+        align-items: center;
+        img {
+          width: 35px;
+          padding-right: 0.5rem;
+        }
+        span {
+          padding-right: 3rem;
+        }
       }
     }
   }
