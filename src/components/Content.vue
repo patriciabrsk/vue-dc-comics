@@ -53,7 +53,7 @@ div#content {
 
     div.container {
       position: relative;
-      padding: 3rem 0;
+      padding: 3rem 0 1.2rem;
       h4.tag {
         color: white;
         padding: 0.3rem 0.9rem;
