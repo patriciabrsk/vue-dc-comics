@@ -1,10 +1,12 @@
 <template>
   <div id="shop-menu">
     <div class="menu-links">
-      <a v-for="(link, index) in links" :key="index">
-        <img :src="`../assets/img/${link.img}`" :alt="link.text" />
-        <span>{{ link.text }}</span>
-      </a>
+      <div class="link">
+        <a v-for="(link, index) in links" :key="index">
+          <img :src="require(`@/assets/img/${link.img}`)" :alt="link.text" />
+          <span>{{ link.text }}</span>
+        </a>
+      </div>
     </div>
   </div>
 </template>
@@ -52,16 +54,22 @@ div#shop-menu {
   justify-content: center;
 
   div.menu-links {
-    width: 65%;
+    width: 70%;
     display: flex;
     justify-content: space-between;
     color: white;
     text-transform: uppercase;
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     padding: 25px 0 25px;
 
-    img {
-      padding-right: 0.5rem;
+    div.link {
+      margin: 0 auto;
+      align-items: center;
+      text-align: center;
+      img {
+        width: 30px;
+        padding-right: 0.5rem;
+      }
     }
   }
 }

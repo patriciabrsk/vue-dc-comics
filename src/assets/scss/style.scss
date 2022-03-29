@@ -1,5 +1,2 @@
 @import "./partials/_variables.scss";
-
-div.aligner {
-    @include centralizer;
-}
+@import "./partials/_common.scss";

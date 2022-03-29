@@ -41,7 +41,7 @@ div#footer-nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 100px;
+    height: 80px;
 
     div.sign-up {
       a {
@@ -50,7 +50,7 @@ div#footer-nav {
         padding: 10px;
         border: 2px solid $brandColor;
         text-transform: uppercase;
-        font-size: 0.9rem;
+        font-size: 0.8rem;
         font-weight: 300;
       }
     }

@@ -7,9 +7,6 @@
           link.text
         }}</a>
       </li>
-      <li>
-        <a class="active" href="#">Comics</a>
-      </li>
     </ul>
   </div>
 </template>
@@ -79,12 +76,12 @@ export default {
 
 <style lang="scss" scoped>
 @import "../assets/scss/partials/_variables.scss";
+@import "../assets/scss/partials/_common.scss";
 
 div#header {
-  text-align: center;
   display: flex;
   align-items: center;
-  height: 100px;
+  height: 80px;
   margin: 0 auto;
   width: 70%;
   justify-content: space-between;
@@ -92,8 +89,8 @@ div#header {
   font-weight: 500;
 
   img {
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
   }
 
   ul {
@@ -106,7 +103,7 @@ div#header {
       display: flex;
       align-items: center;
       text-align: center;
-      padding: 25px 10px;
+      padding: 30px 10px;
 
       &:active,
       &.active {
@@ -116,6 +113,12 @@ div#header {
       a {
         text-decoration: none;
         color: #303030;
+
+        &:active,
+        &:hover,
+        &.active {
+          color: $brandColor;
+        }
       }
     }
   }
