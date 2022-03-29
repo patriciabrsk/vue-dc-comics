@@ -86,7 +86,7 @@ div#header {
   width: 70%;
   justify-content: space-between;
   font-size: 70%;
-  font-weight: 500;
+  font-weight: 600;
 
   img {
     width: 60px;
@@ -107,7 +107,7 @@ div#header {
 
       &:active,
       &.active {
-        border-bottom: 5px solid $brandColor;
+        border-bottom: 3px solid $brandColor;
       }
 
       a {
