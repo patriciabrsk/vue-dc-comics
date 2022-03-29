@@ -17,7 +17,8 @@ export default {
 <style lang="scss" scoped>
 div#card {
   width: calc((100% / 6) - 2rem);
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
+  margin-right: 1rem;
 
   img {
     width: 100%;
