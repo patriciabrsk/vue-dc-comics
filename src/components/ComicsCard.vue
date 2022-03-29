@@ -30,7 +30,7 @@ div#card {
     object-position: 0 0;
   }
   h5 {
-    font-size: 0.7rem;
+    font-size: 0.6rem;
     margin-top: 5px;
     color: white;
   }
