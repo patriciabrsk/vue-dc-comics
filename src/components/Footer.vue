@@ -217,6 +217,10 @@ div#footer {
               text-decoration: none;
               font-size: 0.7rem;
               color: #797979;
+              &:hover {
+                cursor: pointer;
+                color: white;
+              }
             }
           }
         }

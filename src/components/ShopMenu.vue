@@ -65,6 +65,10 @@ div#shop-menu {
       a {
         margin: 0 auto;
         align-items: center;
+        &:hover {
+          cursor: pointer;
+        }
+
         img {
           width: 45px;
           padding-right: 0.6rem;
