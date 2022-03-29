@@ -21,8 +21,9 @@ div#card {
 
   img {
     width: 100%;
-    height: 120px;
+    height: 125px;
     object-fit: cover;
+    object-position: 0 0;
   }
   h5 {
     font-size: 0.7rem;
