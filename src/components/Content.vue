@@ -61,7 +61,7 @@ div#content {
         background-color: $brandColor;
         position: absolute;
         top: 0;
-        transform: translateY(-60%);
+        transform: translateY(-50%);
       }
       .cards {
         flex-wrap: wrap;

@@ -18,15 +18,16 @@ export default {
 
 <style lang="scss" scoped>
 div#card {
-  width: calc(100% / 6 - 1.5rem);
+  width: calc((100% / 6) - 2rem);
   margin-bottom: 1rem;
 
-  .card-wrapper {
-    img {
-      width: 100%;
-      object-fit: cover;
-    }
+  // .card-wrapper {
+  img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
   }
+  // }
   h5 {
     text-transform: uppercase;
     font-size: 0.7rem;
