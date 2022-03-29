@@ -76,6 +76,9 @@ div#content {
           color: white;
           border: none;
           padding: 0.6rem 2.5rem;
+          &:hover {
+            cursor: pointer;
+          }
         }
       }
     }

@@ -19,6 +19,9 @@ div#card {
   width: calc((100% / 6) - 2rem);
   margin-bottom: 1.5rem;
   margin-right: 1rem;
+  &:hover {
+    cursor: pointer;
+  }
 
   img {
     width: 100%;

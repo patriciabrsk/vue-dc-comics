@@ -64,6 +64,9 @@ div#footer-nav {
       div.icons {
         align-items: center;
         gap: 0.8rem;
+        &:hover {
+          cursor: pointer;
+        }
       }
     }
   }
