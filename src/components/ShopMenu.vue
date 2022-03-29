@@ -1,8 +1,8 @@
 <template>
-  <div id="shop-menu">
-    <div class="menu-links">
-      <div class="link">
-        <a v-for="(link, index) in links" :key="index">
+  <div id="shop-menu" class="flex">
+    <div class="menu-links flex">
+      <div class="link flex">
+        <a v-for="(link, index) in links" :key="index" class="flex">
           <img :src="require(`@/assets/img/${link.img}`)" :alt="link.text" />
           <span>{{ link.text }}</span>
         </a>
@@ -45,31 +45,27 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "../assets/scss/partials/_variables.scss";
+@import "../assets/scss/style.scss";
 
 div#shop-menu {
   background-color: $brandColor;
-  display: flex;
   gap: 1rem;
   justify-content: center;
 
   div.menu-links {
     width: 70%;
-    display: flex;
     justify-content: center;
     color: white;
     text-transform: uppercase;
     font-size: 0.7rem;
 
     div.link {
-      display: flex;
       justify-content: center;
       margin: 0 auto;
       padding: 22px 0 22px;
       gap: 3.5rem;
 
       a {
-        display: flex;
         margin: 0 auto;
         align-items: center;
         img {

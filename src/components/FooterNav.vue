@@ -1,15 +1,15 @@
 <template>
   <div id="footer-nav">
-    <div class="nav-wrapper">
+    <div class="nav-wrapper container flex">
       <div class="sign-up">
         <a href="#">Sign-up now!</a>
       </div>
 
-      <div class="social-wrapper aligner">
+      <div class="social-wrapper flex">
         <div class="follow">
           <p>Follow us</p>
         </div>
-        <div class="icons">
+        <div class="icons flex">
           <img src="../assets/img/footer-facebook.png" alt="FB logo" />
           <img src="../assets/img/footer-twitter.png" alt="Twitter logo" />
           <img src="../assets/img/footer-youtube.png" alt="YT logo" />
@@ -29,16 +29,13 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "../assets/scss/partials/_variables.scss";
+@import "../assets/scss/style.scss";
 
 div#footer-nav {
   background-color: #303030;
   color: white;
 
   div.nav-wrapper {
-    width: 70%;
-    margin: 0 auto;
-    display: flex;
     align-items: center;
     justify-content: space-between;
     height: 80px;
@@ -56,7 +53,6 @@ div#footer-nav {
     }
 
     div.social-wrapper {
-      display: flex;
       align-items: center;
       gap: 1rem;
       justify-content: space-between;
@@ -68,7 +64,6 @@ div#footer-nav {
       }
 
       div.icons {
-        display: flex;
         align-items: center;
         gap: 0.8rem;
       }

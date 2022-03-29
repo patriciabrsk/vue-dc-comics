@@ -1,6 +1,6 @@
 <template>
   <div id="content">
-    <div class="wrapper">
+    <div class="wrapper flex">
       <h3>Content goes here</h3>
     </div>
   </div>
@@ -15,7 +15,7 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
-@import "../assets/scss/partials/_variables.scss";
+@import "../assets/scss/style.scss";
 
 div#content {
   background-color: #1c1c1c;
@@ -24,7 +24,6 @@ div#content {
   div.wrapper {
     width: 70%;
     margin: 0 auto;
-    display: flex;
     align-items: center;
     height: 85px;
 

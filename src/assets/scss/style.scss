@@ -1,2 +1,10 @@
 @import "./partials/_variables.scss";
 @import "./partials/_common.scss";
+
+.flex {
+    @include flex;
+}
+
+.container {
+    @include container;
+}

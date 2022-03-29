@@ -1,8 +1,8 @@
 <template>
-  <div id="header">
+  <div id="header" class="flex">
     <img src="../assets/img/dc-logo.png" alt="DC logo" />
-    <ul>
-      <li v-for="(link, index) in headerLinks" :key="index">
+    <ul class="flex">
+      <li v-for="(link, index) in headerLinks" :key="index" class="flex">
         <a :class="{ active: link.current }" :href="link.url">{{
           link.text
         }}</a>
@@ -75,11 +75,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "../assets/scss/partials/_variables.scss";
-@import "../assets/scss/partials/_common.scss";
+@import "../assets/scss/style.scss";
 
 div#header {
-  display: flex;
   align-items: center;
   height: 80px;
   margin: 0 auto;
@@ -94,13 +92,11 @@ div#header {
   }
 
   ul {
-    display: flex;
     justify-content: space-evenly;
 
     li {
       list-style-type: none;
       text-transform: uppercase;
-      display: flex;
       align-items: center;
       text-align: center;
       padding: 30px 10px;

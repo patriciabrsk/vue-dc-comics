@@ -1,7 +1,7 @@
 <template>
   <div id="footer">
-    <div class="footer-wrapper">
-      <div class="links-wrapper">
+    <div class="footer-wrapper flex">
+      <div class="links-wrapper container flex">
         <div class="links-list">
           <h4>DC Comics</h4>
           <nav>
@@ -183,20 +183,16 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "../assets/scss/partials/_variables.scss";
+@import "../assets/scss/style.scss";
 
 div#footer {
   background-image: url("../assets/img/footer-bg.jpg");
 
   div.footer-wrapper {
     font-size: 0.8rem;
-    display: flex;
     justify-content: space-around;
 
     div.links-wrapper {
-      margin: 0 auto;
-      width: 70%;
-      display: flex;
       background-image: url("../assets/img/dc-logo-bg.png");
       background-repeat: no-repeat;
       background-size: 50%;
