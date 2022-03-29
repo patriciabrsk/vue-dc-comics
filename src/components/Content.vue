@@ -3,16 +3,35 @@
     <div id="jumbotron"></div>
     <div class="cards-wrapper flex">
       <div class="container">
-        <h3>Content goes here</h3>
+        <h4 class="tag">Current series</h4>
+        <div class="cards flex">
+          <ComicsCard
+            v-for="(card, index) in cards"
+            :key="index"
+            :card="card"
+          />
+        </div>
+        <div class="button flex">
+          <button class="btn">Load More</button>
+        </div>
       </div>
     </div>
   </div>
 </template>
 
 <script>
+import cards from "../assets/dc-comics.json";
+import ComicsCard from "./ComicsCard.vue";
+
 export default {
   // eslint-disable-next-line vue/multi-word-component-names
   name: "Content",
+  components: { ComicsCard },
+  data() {
+    return {
+      cards,
+    };
+  },
 };
 </script>
 
@@ -22,7 +41,7 @@ export default {
 
 div#content {
   div#jumbotron {
-    height: 30vh;
+    height: 42vh;
     background-image: url("../assets/img/jumbotron.jpg");
     background-size: cover;
   }
@@ -31,10 +50,36 @@ div#content {
     background-color: #1c1c1c;
     width: 100%;
     align-items: center;
-    height: 85px;
 
-    h3 {
-      color: white;
+    div.container {
+      position: relative;
+      padding: 3rem 0;
+      h4.tag {
+        text-transform: uppercase;
+        color: white;
+        padding: 0.3rem 0.9rem;
+        background-color: $brandColor;
+        position: absolute;
+        top: 0;
+        transform: translateY(-60%);
+      }
+      .cards {
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      div.button {
+        justify-content: center;
+
+        .btn {
+          background-color: $brandColor;
+          font-size: 0.7rem;
+          font-weight: 400;
+          text-transform: uppercase;
+          color: white;
+          border: none;
+          padding: 0.6rem 2rem;
+        }
+      }
     }
   }
 }
