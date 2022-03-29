@@ -1,6 +1,6 @@
 <template>
   <div id="shop-menu" class="flex">
-    <div class="menu-links flex">
+    <div class="menu-links container flex">
       <div class="link flex">
         <a v-for="(link, index) in links" :key="index" class="flex">
           <img :src="require(`@/assets/img/${link.img}`)" :alt="link.text" />
@@ -53,7 +53,6 @@ div#shop-menu {
   justify-content: center;
 
   div.menu-links {
-    width: 70%;
     justify-content: center;
     color: white;
     text-transform: uppercase;
@@ -61,15 +60,14 @@ div#shop-menu {
 
     div.link {
       justify-content: center;
-      margin: 0 auto;
-      padding: 22px 0 22px;
+      padding: 30px 0;
       gap: 3.5rem;
 
       a {
         margin: 0 auto;
         align-items: center;
         img {
-          width: 33px;
+          width: 45px;
           padding-right: 0.6rem;
         }
       }

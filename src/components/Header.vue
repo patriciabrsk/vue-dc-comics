@@ -79,7 +79,7 @@ export default {
 
 div#header {
   align-items: center;
-  height: 80px;
+  height: 12vh;
   margin: 0 auto;
   width: 70%;
   justify-content: space-between;
@@ -99,7 +99,9 @@ div#header {
       text-transform: uppercase;
       align-items: center;
       text-align: center;
-      padding: 30px 10px;
+      height: 12vh;
+      padding: 10px;
+      border-bottom: 3px solid transparent;
 
       &:active,
       &.active {

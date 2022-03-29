@@ -1,7 +1,10 @@
 <template>
   <div id="content">
-    <div class="wrapper flex">
-      <h3>Content goes here</h3>
+    <div id="jumbotron"></div>
+    <div class="cards-wrapper flex">
+      <div class="container">
+        <h3>Content goes here</h3>
+      </div>
     </div>
   </div>
 </template>
@@ -18,12 +21,15 @@ export default {
 @import "../assets/scss/style.scss";
 
 div#content {
-  background-color: #1c1c1c;
-  width: 100%;
+  div#jumbotron {
+    height: 30vh;
+    background-image: url("../assets/img/jumbotron.jpg");
+    background-size: cover;
+  }
 
-  div.wrapper {
-    width: 70%;
-    margin: 0 auto;
+  div.cards-wrapper {
+    background-color: #1c1c1c;
+    width: 100%;
     align-items: center;
     height: 85px;
 

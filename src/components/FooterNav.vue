@@ -38,7 +38,7 @@ div#footer-nav {
   div.nav-wrapper {
     align-items: center;
     justify-content: space-between;
-    height: 80px;
+    height: 12vh;
 
     div.sign-up {
       a {

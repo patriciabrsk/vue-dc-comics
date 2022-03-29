@@ -195,25 +195,28 @@ div#footer {
     div.links-wrapper {
       background-image: url("../assets/img/dc-logo-bg.png");
       background-repeat: no-repeat;
-      background-size: 50%;
+      background-size: 48%;
       background-position: center right;
 
       div.links-list {
-        padding: 10px 0;
+        padding: 22px 0;
         margin-right: 15px;
         h4 {
           color: white;
           text-transform: uppercase;
+          margin-bottom: 0.6rem;
         }
 
         ul {
           padding-left: 0;
+          margin-bottom: 0.6rem;
 
           li {
             list-style-type: none;
 
             a {
               text-decoration: none;
+              font-size: 0.7rem;
               color: #797979;
             }
           }
