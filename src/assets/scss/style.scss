@@ -2,9 +2,13 @@
 @import "./partials/_common.scss";
 
 .flex {
-    @include flex;
+    display: flex;
 }
 
 .container {
     @include container;
+}
+
+.text-uppercase {
+    text-transform: uppercase;
 }

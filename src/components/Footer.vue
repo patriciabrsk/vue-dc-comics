@@ -3,7 +3,7 @@
     <div class="footer-wrapper flex">
       <div class="links-wrapper container flex">
         <div class="links-list">
-          <h4>DC Comics</h4>
+          <h4 class="text-uppercase">DC Comics</h4>
           <nav>
             <ul>
               <li v-for="(link, index) in dcComicsLinks" :key="index">
@@ -13,7 +13,7 @@
           </nav>
 
           <div>
-            <h4>Shop</h4>
+            <h4 class="text-uppercase">Shop</h4>
             <nav>
               <ul>
                 <li v-for="(link, index) in shopLinks" :key="index">
@@ -25,7 +25,7 @@
         </div>
 
         <div class="links-list">
-          <h4>DC</h4>
+          <h4 class="text-uppercase">DC</h4>
           <nav>
             <ul>
               <li v-for="(link, index) in dcLinks" :key="index">
@@ -36,7 +36,7 @@
         </div>
 
         <div class="links-list">
-          <h4>Sites</h4>
+          <h4 class="text-uppercase">Sites</h4>
           <nav>
             <ul>
               <li v-for="(link, index) in sitesLinks" :key="index">
@@ -203,7 +203,6 @@ div#footer {
         margin-right: 15px;
         h4 {
           color: white;
-          text-transform: uppercase;
           margin-bottom: 0.6rem;
         }
 

@@ -2,12 +2,12 @@
   <div id="footer-nav">
     <div class="nav-wrapper container flex">
       <div class="sign-up">
-        <a href="#">Sign-up now!</a>
+        <a class="text-uppercase" href="#">Sign-up now!</a>
       </div>
 
       <div class="social-wrapper flex">
         <div class="follow">
-          <p>Follow us</p>
+          <p class="text-uppercase">Follow us</p>
         </div>
         <div class="icons flex">
           <img src="../assets/img/footer-facebook.png" alt="FB logo" />
@@ -46,7 +46,6 @@ div#footer-nav {
         color: white;
         padding: 10px;
         border: 2px solid $brandColor;
-        text-transform: uppercase;
         font-size: 0.8rem;
         font-weight: 300;
       }
@@ -58,7 +57,6 @@ div#footer-nav {
       justify-content: space-between;
 
       div.follow p {
-        text-transform: uppercase;
         font-weight: 600;
         color: $brandColor;
       }

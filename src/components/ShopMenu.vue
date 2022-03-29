@@ -1,6 +1,6 @@
 <template>
   <div id="shop-menu" class="flex">
-    <div class="menu-links container flex">
+    <div class="menu-links container flex text-uppercase">
       <div class="link flex">
         <a v-for="(link, index) in links" :key="index" class="flex">
           <img :src="require(`@/assets/img/${link.img}`)" :alt="link.text" />
@@ -55,7 +55,6 @@ div#shop-menu {
   div.menu-links {
     justify-content: center;
     color: white;
-    text-transform: uppercase;
     font-size: 0.7rem;
 
     div.link {

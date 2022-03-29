@@ -3,7 +3,7 @@
     <div id="jumbotron"></div>
     <div class="cards-wrapper flex">
       <div class="container">
-        <h4 class="tag">Current series</h4>
+        <h4 class="tag text-uppercase">Current series</h4>
         <div class="cards flex">
           <ComicsCard
             v-for="(card, index) in cards"
@@ -12,7 +12,7 @@
           />
         </div>
         <div class="button flex">
-          <button class="btn">Load More</button>
+          <button class="btn text-uppercase">Load More</button>
         </div>
       </div>
     </div>
@@ -55,7 +55,6 @@ div#content {
       position: relative;
       padding: 3rem 0;
       h4.tag {
-        text-transform: uppercase;
         color: white;
         padding: 0.3rem 0.9rem;
         background-color: $brandColor;
@@ -74,10 +73,9 @@ div#content {
           background-color: $brandColor;
           font-size: 0.7rem;
           font-weight: 400;
-          text-transform: uppercase;
           color: white;
           border: none;
-          padding: 0.6rem 2rem;
+          padding: 0.6rem 2.5rem;
         }
       }
     }

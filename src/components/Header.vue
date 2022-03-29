@@ -2,7 +2,11 @@
   <div id="header" class="flex">
     <img src="../assets/img/dc-logo.png" alt="DC logo" />
     <ul class="flex">
-      <li v-for="(link, index) in headerLinks" :key="index" class="flex">
+      <li
+        v-for="(link, index) in headerLinks"
+        :key="index"
+        class="flex text-uppercase"
+      >
         <a :class="{ active: link.current }" :href="link.url">{{
           link.text
         }}</a>
@@ -96,7 +100,6 @@ div#header {
 
     li {
       list-style-type: none;
-      text-transform: uppercase;
       align-items: center;
       text-align: center;
       height: 12vh;
