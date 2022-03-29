@@ -23,7 +23,7 @@ export default {
           img: "buy-comics-digital-comics.png",
         },
         {
-          text: "DC merchandising",
+          text: "DC merchandise",
           img: "buy-comics-merchandise.png",
         },
         {
@@ -63,21 +63,18 @@ div#shop-menu {
 
     div.link {
       display: flex;
-      align-items: center;
-      text-align: center;
+      justify-content: center;
       margin: 0 auto;
       padding: 22px 0 22px;
+      gap: 3.5rem;
 
       a {
         display: flex;
         margin: 0 auto;
         align-items: center;
         img {
-          width: 35px;
-          padding-right: 0.5rem;
-        }
-        span {
-          padding-right: 3rem;
+          width: 33px;
+          padding-right: 0.6rem;
         }
       }
     }
